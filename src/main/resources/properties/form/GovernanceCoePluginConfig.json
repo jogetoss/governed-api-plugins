@@ -1,0 +1,28 @@
+[{
+    title : 'Configure Governance COE Plugin Properties Button',
+    properties : [{
+        name : 'id',
+        label : '@@form.checkbox.id@@',
+        type : 'autocomplete',
+        required : 'True',
+        regex_validation : '^[a-zA-Z0-9_]+$',
+        validation_message : '@@form.checkbox.invalidId@@',
+        options_callback : 'FormBuilder.getAllFieldOptions',
+        value : 'plugin_props'
+    },
+    {
+        name : 'label',
+        label : '@@form.checkbox.label@@',
+        type : 'textfield',
+        value : 'Configure Plugin',
+        required : 'True'
+    },
+    {
+        name : 'pluginClassField',
+        label : 'Plugin Selector Field Id',
+        type : 'autocomplete',
+        options_callback : 'FormBuilder.getFieldOptions',
+        value : 'plugin_class',
+        required : 'True'
+    }]
+}]
